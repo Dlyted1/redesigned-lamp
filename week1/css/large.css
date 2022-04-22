@@ -1,20 +1,13 @@
 @media only screen and (min-width: 600px) {
   nav {
-    width: 100%;
-    overflow: auto;
-  }
-
-  nav ul {
-    margin-left: 2%;
+    text-align: right;
+    margin: 0;
+    padding: 0;
   }
 
   nav ul li {
-    flex: 1 1 100%;
-  }
-
-  nav ul li a {
-    border: none;
-    border-right: 1px solid rgba(01, 01, 01, 0.03);
-    padding: 0.6rem 1.7rem;
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
   }
 }
