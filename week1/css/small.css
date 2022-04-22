@@ -19,13 +19,6 @@ h1 {
   color: #333;
 }
 
-header {
-  padding: 5px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 nav {
   text-align: center;
   font-family: "Lato", sans-serif;
@@ -56,4 +49,16 @@ nav ul li a:hover {
 
 nav ul.hide {
   display: none;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (max-width: 480px) {
+  header img {
+    width: 100%;
+  }
 }
