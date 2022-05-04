@@ -1,7 +1,22 @@
+/* variables */
+$primaryBtn : rgb(208, 185, 188);
+$textColor: rgb(135, 16, 16);
 
 @import "./variables";
 @import "./header";
 
+header {
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  color: $textColor;
+  button {
+    background: $primaryBtn;
+    &:hover {
+      background: rgba(255, 0, 0, 0.355);
+    }
+  }
+}
 
 .contact button {
   background: $primaryBtn;
