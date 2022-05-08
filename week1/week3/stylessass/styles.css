@@ -3,6 +3,10 @@ body {
   background-color: darkred;
 }
 
+h1 {
+  color: rgba(255, 255, 255, 0.822);
+}
+
 /* #contactform {
   background-color: $form-background-color;
 }
@@ -11,12 +15,12 @@ body {
 }
 */
 #contactform {
-  background-color: white;
+  background-color: tan;
   /* Nesting can be done with either selectors or contexts like @media or @supports. For example that we want to have our form fill 100% of the width of the screen at small sizes, but only take up 90% on medium with a max-width of 700px. Perfect job for a media query. Lets look and see what that would look like with nesting. */
 }
 
 #contactform input, #contactform textarea {
-  background-color: white;
+  background-color: beige;
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
@@ -39,4 +43,33 @@ body {
     margin-right: auto;
   }
 }
+
+/* @mixin flex-container() {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+//Now whenever we need to create flex-container we can simply do something like this:
+fieldset > div {
+  @include flex-container;        
+}
+*/
+fieldset > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-flow: column nowrap;
+}
+
+/* fieldset > div {
+  @include flex-container(row, wrap);        
+} */
 /*# sourceMappingURL=styles.css.map */
