@@ -1,0 +1,44 @@
+:root {
+    --max-width: 900px;
+    --min-width: 300px;
+    --preferred-width: 80%;
+    --quoteColor: #b3d4e6;
+  }
+
+  .quotes {
+    border-radius: 20px;
+    border: 4px solid var(--quoteColor);
+    width: clamp(var(--min-width), var(--preferred-width), var(--max-width));
+    margin: 0 auto;
+    display: flex;
+    padding: 3em;
+    gap: 1em;
+    &__quote {
+      position: relative;
+
+      &::before {
+          --quoteSize: 54px;
+          background-image: url("https://images.gr-assets.com/authors/1288560924p5/33394.jpg");
+          content: "";
+
+          height: var(--quoteSize);
+          width: var(--quoteSize);
+          position: absolute;
+          left: -90px;
+          top: 0;
+      }
+      &-author {
+          text-align: right;
+      }
+    }
+      &__author-image {
+          & img {
+              margin-top: -4em;
+              border: 4px solid var(--quoteColor);
+              box-shadow: 10px 10px 0 var(--quoteColor);
+          }
+      
+    }
+
+  }
+  
