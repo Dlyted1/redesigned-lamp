@@ -70,9 +70,28 @@ p {
   }
 }
 
+img {
+  border: 5px solid var(--quoteColor);
+  padding: 10px;
+  -webkit-box-shadow: 10px 10px 0 var(--quoteColor);
+          box-shadow: 10px 10px 0 var(--quoteColor);
+}
+
 .dark-section {
   --brightness: 500%;
   background-color: #333131;
   color: #f9f2f2;
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    -webkit-box-shadow: initial;
+            box-shadow: initial;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

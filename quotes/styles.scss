@@ -68,10 +68,28 @@
       
     }
 
-
+img {
+    
+    border: 5px solid var(--quoteColor);
+    padding: 10px;
+    box-shadow: 10px 10px 0 var(--quoteColor);
+    
+}
   .dark-section {
       --brightness: 500%;
       background-color: rgb(51, 49, 49);
       color: rgb(249, 242, 242)
+  }
+
+  @media only screen and (max-width: 600px) {
+    img { 
+    align-self: flex-end;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: initial;
+    
+    
+}
   }
   
