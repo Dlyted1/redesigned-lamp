@@ -1,4 +1,3 @@
-@use "quotes";
 :root {
   --max-width: 900px;
   --min-width: 300px;
@@ -6,9 +5,9 @@
   --quoteColor: #b3d4e6;
 }
 
-h1, h2, h3, h4, h5,
+h1, h2, h3,
 p {
-  font-size: clamp(var(--fluid-type-min, 1rem), calc(1rem + var(--fluid-type-target, 3vw)), var(--fluid-type-max, 1.3rem));
+  font-size: clamp(var(--fluid-type-min, 0.5rem), calc(1rem + var(--fluid-type-target, 2vw)), var(--fluid-type-max, 1rem));
 }
 
 .quote-box {
@@ -25,14 +24,9 @@ p {
 
 .quote-box__quote {
   position: relative;
-  --fluid-type-min: 1.2rem;
-  --fluid-type-target: 2.5vw;
-  --fluid-type-max: 2.4rem;
-}
-
-.quote-box__quote p {
-  -webkit-filter: brightness(var(--brightness, 100%));
-          filter: brightness(var(--brightness, 100%));
+  --fluid-type-min: .5rem;
+  --fluid-type-target: 2vw;
+  --fluid-type-max: 1.3rem;
 }
 
 .quote-box__quote::before {
@@ -52,7 +46,7 @@ p {
   text-align: right;
 }
 
-@media (max-width: 640px) {
+@media (--max-width: 680px) {
   .quote-box__author-image {
     -ms-flex-item-align: end;
         align-self: flex-end;
@@ -61,17 +55,17 @@ p {
 
 .quote-box__author-image img {
   margin-top: -4em;
-  border: 4px solid var(--quoteColor);
+  border: 5px solid var(--quoteColor);
   -webkit-box-shadow: 10px 10px 0 var(--quoteColor);
           box-shadow: 10px 10px 0 var(--quoteColor);
 }
 
-@media (max-width: 680px) {
+@media (--max-width: 680px) {
   .quote-box__author-image img {
-    border-radius: 100%;
+    border-radius: 50%;
     -webkit-box-shadow: initial;
             box-shadow: initial;
-    width: 80%;
+    width: 80px;
   }
 }
 
