@@ -70,8 +70,7 @@
 
 img {
     
-    border: 5px solid var(--quoteColor);
-    padding: 10px;
+    border: 10px solid var(--quoteColor);
     box-shadow: 10px 10px 0 var(--quoteColor);
     
 }
@@ -86,7 +85,8 @@ img {
     align-self: flex-end;
     width: 80px;
     height: 80px;
-    border-radius: 50%;
+    border-radius: 90%;
+    padding: 3px;
     box-shadow: initial;
     
     
