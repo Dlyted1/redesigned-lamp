@@ -45,7 +45,7 @@
       }
     }
       &__author-image {
-          @media(--max-width: 680px) {
+          @media(max-width: 680px) {
               align-self: flex-end;
           }
          
@@ -54,7 +54,7 @@
               border: 5px solid var(--quoteColor);
               padding: 10px;
               box-shadow: 10px 10px 0 var(--quoteColor);
-              @media(--max-width: 680px) {
+              @media(max-width: 680px) {
                   border-radius: 50%;
                   box-shadow: initial;
                   width: 80px;

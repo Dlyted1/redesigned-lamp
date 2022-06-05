@@ -46,7 +46,7 @@ p {
   text-align: right;
 }
 
-@media (--max-width: 680px) {
+@media (max-width: 680px) {
   .quote-box__author-image {
     -ms-flex-item-align: end;
         align-self: flex-end;
@@ -61,7 +61,7 @@ p {
           box-shadow: 10px 10px 0 var(--quoteColor);
 }
 
-@media (--max-width: 680px) {
+@media (max-width: 680px) {
   .quote-box__author-image img {
     border-radius: 50%;
     -webkit-box-shadow: initial;
