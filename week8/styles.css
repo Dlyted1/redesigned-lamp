@@ -1,0 +1,21 @@
+
+.card-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    
+}
+
+.grid-row {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	height: 5px;
+    padding: 20px;
+}
+
+.col-grid {
+    width: 10px;
+    flex-wrap: wrap;
+}
