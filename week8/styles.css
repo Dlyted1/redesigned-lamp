@@ -1,21 +1,27 @@
 
 .card-grid {
-    display: flex;
-    justify-content: space-around;
-    align-items:flex-start;
+    padding: 30px;
+    
+    
+	
+    
     
 }
 
 .grid-row {
-    display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	height: 5px;
-    padding: 20px;
+   	display: flex;
+	
+	justify-content: space-between;
+	align-items: center;
+	align-content: space-between;
+	height: 20px;
 }
 
 .col-grid {
-    width: 10px;
-    flex-wrap: wrap;
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	align-content: space-evenly;
+    width: 50px;
 }
