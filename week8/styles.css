@@ -1,16 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+
+div.card {
+    margin-left: 20%;
+    padding: 20px;
+
+}
 
 .card-grid {
     padding: 30px;
-    
-    
-	
-    
+        
     
 }
 
 .grid-row {
    	display: flex;
 	
+    flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 	align-content: space-between;
@@ -23,5 +34,5 @@
 	justify-content: space-between;
 	align-items: center;
 	align-content: space-evenly;
-    width: 50px;
+    width: 100px;
 }
