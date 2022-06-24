@@ -1,0 +1,48 @@
+
+/* position block in middle of screen, font details and background  */
+.demo {
+    background: #3991AE;
+    color: #fff;
+    cursor: pointer;
+    font-size: 6rem;
+    height: 10rem;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 20rem;
+  }
+  
+  /*set up absolute position for the letters inside the box  */
+  .demo-letter {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    /*transition now added to have hover transition the letters up and down  */
+    -webkit-transition: -webkit-transform .4s ease-out;
+    transition: -webkit-transform .4s ease-out;
+    transition: transform .4s ease-out;
+    transition: transform .4s ease-out, -webkit-transform .4s ease-out;
+  }
+  
+  /*here we positon letters in the middle with transform  */
+  .demo-letter1 {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  
+  /*here we position letter outside of box with transform  */
+  .demo-letter2 {
+    -webkit-transform: translate(-50%, 200%);
+            transform: translate(-50%, 200%);
+  }
+  
+  /*now hover state is reversed from above  */
+  .demo:hover .demo-letter1 {
+    -webkit-transform: translate(-50%, -200%);
+            transform: translate(-50%, -200%);
+  }
+  
+  .demo:hover .demo-letter2 {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
