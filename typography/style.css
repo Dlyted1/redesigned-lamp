@@ -13,14 +13,15 @@
   --s3: calc(var(--s2) * var(--ratio));
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
+  --font-color: #333;
   /* set variation axis values */
   --mono: "MONO" 0;
   /* Monospace: Sans (natural-width) or Mono (fixed-width) */
   --casl: "CASL" 0;
   /* Casual: Linear to Casual */
-  --wght: "wght" 600;
+  --wght: "wght" 300;
   /* Weight: Light to ExtraBlack; usually set with `font-weight` */
-  --slnt: "slnt" 0;
+  --slnt: "slnt" 0deg;
   /* Slant: 0 to -15 degrees, auto cursive at -14 */
   --CRSV: "CRSV" 0.5;
   /* Cursive: always roman (0), auto substitution (.5), or always cursive (1) */
@@ -76,7 +77,7 @@ dd {
   --wght: "wght" 400;
 }
 
-/*  .header-banner {
+/* .header-banner {
     height: 4em;
     padding: var(--s-1);
     background-color: #ddd;
@@ -94,7 +95,8 @@ dd {
       gap: var(--s-1);
     }
     .header-banner h2 {
-      writing-mode: vertical-rl;
+     -ms-writing-mode: tb-rl;
+         writing-mode: vertical-rl;
       height: 4em;
       line-height: 0.8;
       margin: 0;
@@ -102,9 +104,9 @@ dd {
     .header-banner h1 {
       margin: 0;
     }
-  }  */
+  */
 .header-banner {
-  height: 4em;
+  height: 5em;
   padding: var(--s-1);
   background-color: #ddd;
 }
@@ -113,7 +115,7 @@ dd {
 .header-banner h2 {
   --mono: "MONO" 1;
   --casl: "CASL" 0;
-  --wght: 800;
+  --wght: 600;
 }
 
 .header-banner > div {
@@ -131,8 +133,8 @@ dd {
 }
 
 .header-banner h2 {
+  -ms-writing-mode: tb-rl;
   -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   height: 4em;
   line-height: 0.8;
