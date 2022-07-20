@@ -2,7 +2,7 @@
     grid-column: 1 / span 2;
     grid-row: 1;
     margin-bottom: 25em;
-    background: url(./images/imgleaf.png)no-repeat top right;
+    background: url("/zen_garden_kathy/images/imgleaf.png")no-repeat top right;
     background-size: 200px auto;
     .summary {
         line-height: 1em;
@@ -48,7 +48,7 @@
         }
     }
     header[role=banner] {
-        background: url(./images/leaves_tran.png)no-repeat top left;
+        background: url("/zen_garden_kathy/images/leaves_tran.png")no-repeat top left;
         background-blend-mode: lighten;
     }
 }
@@ -77,7 +77,7 @@
         a:hover {
             color: $color3;
             font-weight: 800;
-            background: url(/images/leaf-svgrepo-com.svg) no-repeat center;
+            background: url("/images/leaf-svgrepo-com.svg") no-repeat center;
             background-size: 30px;
             filter: opacity(0.5) drop-shadow(0 0 0 $color6);
             animation: bouncy 5s infinite linear;
